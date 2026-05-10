@@ -1,0 +1,131 @@
+.slide {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.slideHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid #e94560;
+}
+
+.company {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.2;
+}
+
+.ticker {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e94560;
+  letter-spacing: 0.05em;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background: #1a1a2e;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.overview {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.section {
+  min-width: 0;
+}
+
+.sectionTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #e94560;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #eee;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  font-size: 0.82rem;
+  color: #333;
+  padding: 0.3rem 0;
+  padding-left: 0.85rem;
+  position: relative;
+  line-height: 1.45;
+}
+
+.listItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #1a1a2e;
+}
+
+.slideFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid #eee;
+  font-size: 0.7rem;
+  color: #999;
+}
+
+@media (max-width: 640px) {
+  .slide {
+    aspect-ratio: auto;
+    padding: 1.25rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .company {
+    font-size: 1.2rem;
+  }
+
+  .slideFooter {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
