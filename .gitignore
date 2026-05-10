@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# env files — never commit secrets
+.env
+.env.local
+.env.*.local
+
+# netlify local cache
+.netlify/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# generated pptx files
+*.pptx
